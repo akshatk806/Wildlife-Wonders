@@ -2,3 +2,10 @@
     max-width: 150px;
 }
   
+.parent {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 40px 20px;
+    justify-content: center;
+    padding: 20px;
+}
