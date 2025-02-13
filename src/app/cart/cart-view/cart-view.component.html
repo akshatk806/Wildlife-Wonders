@@ -6,6 +6,11 @@
                 <span matListItemTitle>{{ product.name }}</span>
                 <span matListItemLine>{{ product.price | currency:'INR' }}</span>
             </mat-list-item>
+
+            <mat-list-item>
+                <span class="price" matListItemTitle>Total (INR): </span>
+                <span class="price" matListItemLine>{{ totalPrice | currency:'INR' }}</span>
+            </mat-list-item>
         </mat-list>
     </mat-card>
 </div>
