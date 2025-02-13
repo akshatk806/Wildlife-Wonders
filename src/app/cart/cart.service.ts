@@ -8,7 +8,8 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class CartService {
-  private apiUrl = environment.apiUrl + "/cart";
+  private apiUrl = environment.apiUrl + "/cart";   // cart url
+  private apiCheckoutUrl = environment.apiUrl + "/checkout";
 
   constructor(private httpClient: HttpClient) { }
 
@@ -23,4 +24,8 @@ export class CartService {
   clearCart(): Observable<void> {
     return this.httpClient.delete<void>(this.apiUrl);
   } 
+
+  checkout(products: Product[]): Observable<void> {
+    return this.httpClient.post<void>(this.apiCheckoutUrl, products);
+  }
 }
