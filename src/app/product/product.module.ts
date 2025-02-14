@@ -4,6 +4,7 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatInputModule } from '@angular/material/input';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     CommonModule,
     MatCardModule,
     MatButtonModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatInputModule
   ]
 })
 export class ProductModule { }
