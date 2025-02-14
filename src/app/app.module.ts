@@ -9,6 +9,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { CartModule } from './cart/cart.module';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CartModule } from './cart/cart.module';
     ProductModule,
     MatToolbarModule,
     MatButtonModule,
-    CartModule
+    CartModule,
+    RouterModule
   ],
   providers: [
     provideClientHydration(withEventReplay()),
